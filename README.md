@@ -30,3 +30,14 @@ Este projeto é uma aplicação web desenvolvida como solução para o case do p
 5. Execute a aplicação:
    `python app.py`
 6. Acesse `http://127.0.0.1:5000` no seu navegador.
+
+## 📊 Dados de Exemplo
+
+Na pasta `/exemplos`, você encontrará arquivos `.txt` e `.pdf` prontos para teste, cobrindo diferentes cenários de classificação.
+Caso queira gerar um arquivo com outras mensagens para teste, o formato ideal segue dessa forma:
+- **Para emails que vem com assunto** 
+Assunto:  
+Mensagem:
+
+- **Para emails que vem só a mensagem**
+Mensagem:
