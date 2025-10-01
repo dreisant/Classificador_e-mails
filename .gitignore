@@ -1,0 +1,37 @@
+# ===================================================
+# Arquivo de segredos - A LINHA MAIS IMPORTANTE!
+# =ga================================================
+# Impede que o arquivo com suas chaves de API seja enviado.
+.env
+
+
+# ===================================================
+# Ambiente Virtual do Python
+# ===================================================
+# Ignora a pasta inteira do ambiente virtual.
+venv/
+.venv/
+
+
+# ===================================================
+# Arquivos de Cache e Compilados do Python
+# ===================================================
+# Ignora as pastas de cache que o Python cria automaticamente.
+__pycache__/
+*.pyc
+
+
+# ===================================================
+# Arquivos de Configuração de Editores (Boa Prática)
+# ===================================================
+# Ignora pastas de configuração de editores populares como VSCode e PyCharm.
+.vscode/
+.idea/
+
+
+# ===================================================
+# Arquivos de Sistema Operacional
+# ===================================================
+# Ignora arquivos "lixo" que o macOS e o Windows criam.
+.DS_Store
+Thumbs.db

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmAIl</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <main> 
+        <div class="main">
+            <nav class="header-navegacao">
+                <div class = "navegacao">
+                    <button class="header-home">
+                            <img class="logo-Em-AI" src="{{ url_for('static', filename='images/em_AI_logo.png') }}" alt="Logo EmAIl">
+
+                        </button>
+                    <div class="dropdown-sobre">
+                        <button class="header-sobre">
+                            Sobre</button>
+                        <div class="dropdown-sobre-content">
+                            <a >Somos uma solução digital para empresas que lidam com alto volume de emails diariamente. Nosso objetivo é automatizar a leitura e classificação desses emails e sugerir classificações e respostas automáticas de acordo com o teor de cada email recebido, liberando tempo da equipe para que não seja mais necessário ter uma pessoa fazendo esse trabalho manualmente </a>
+                        </div>    
+                    </div>    
+                    <div class="dropdown-contato">    
+                        <button class="header-contato">
+                            Contato</button>
+                            <div class="dropdown-contato-content">
+                                <a href="">Telefone</a>
+                                <a href="">Email</a>
+                                <a href="">Instagram</a>
+                            </div>
+                    </div>
+
+                </div>
+            </nav>
+            <div class="container">
+                <h1>O <span class="highlight">Melhor classificador de emails AI</span><br>Trouxemos o futuro para suas mãos</h1>
+                <p>Poupe seu tempo utilizando IA para classificar e responder emails de acordo a devida importancia</p>
+            </div>
+
+            <div class="upload-area-container">
+
+            <div class="upload-box">
+                <h2>Envie suas mensagens por TXT/PDF</h2>
+                <form id="uploadForm" class="upload-form">
+                  <div class="file-upload-wrapper">
+                      <input type="file" id="fileInput" name="file" accept=".txt,.pdf" required class="hidden-file-input">
+                      <label for="fileInput" class="custom-file-upload">
+                          <span class="upload-icon">⬆️</span> Escolher Arquivo
+                      </label>
+                      <span id="fileNameDisplay" class="file-name-display">Nenhum arquivo escolhido</span>
+                  </div>
+                  <button type="submit" class="btn-upload">Analisar Emails</button>
+              </form>
+            </div>
+            
+            <div class="response-box">
+                <h3>Resultado da Classificação por IA:</h3>
+                <div id="responseContent">
+                    Aguardando envio do arquivo para análise...
+                </div>
+                <p style="font-style: italic; color: #555;">Processado por: <span id="processingMode">--</span></p>
+            </div>
+            
+        </div>
+        </div>
+    </main>
+  <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>  
+</body>
+</html>
